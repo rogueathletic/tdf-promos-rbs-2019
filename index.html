@@ -25,7 +25,7 @@
 
 
    .card:hover {
-    transition-duration: 1.5s!important;
+    transition-duration: 3s!important;
     border-radius: 25px 25px 5px 5px!important;
     transform: scale(1.008)!important;
     }
@@ -112,9 +112,9 @@ right: 0px!important;
     #card-day24 {
 box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.116);
 text-align: justify;
-margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
+        margin: 0 auto;
+        float: none; 
+        margin-bottom: 10px; 
     }
 
 .jumbotron {
@@ -146,6 +146,14 @@ overflow: hidden;
 width: 84vw!important;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+* {
+  transform: scale(1)!important;
+  }
+}
+
+
 
 @media only screen and (max-width: 650px) {
 #tour-btn1,
@@ -209,8 +217,9 @@ height: auto;
 }
 
 .card-img-top:hover {
-    transition: 1.9s!important;
+    transition: 2.9s!important;
     border-radius: 5px;
+    transform: scale(1.1)!important;
 }
 
 #zzzz {
@@ -230,6 +239,12 @@ height: auto;
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .btn, .btn-primary {
+    text-align: right;
+  }
+}
+
 #tour-promofooter {
 position: relative;
 bottom: 0;
@@ -238,6 +253,10 @@ width: 100vw;
 text-align: center;
 color: silver;
 }
+
+#image-hold {
+  overflow: hidden!important;
+}
     </style>
   </head>
   <body>
@@ -245,8 +264,9 @@ color: silver;
         <div class="container">
 
             <div class="card" style="width: 18rem;" id="card-day1">
-             
-                <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/1/13484/0:0,2000:690-2000-0-70/95238" alt="Card image cap">
+             <div id="image-hold">
+                <img class="card-img-top" id="img1" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/1/13484/0:0,2000:690-2000-0-70/95238" alt="Card image cap">
+              </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 1 - Flat <br> Bruxelles <i class="fas fa-arrow-right"></i> Brussel <br> 194.5km</h5>
        
@@ -258,7 +278,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day2">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/2/13488/0:0,2000:690-2000-0-70/eaff9" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 2 - Team Time Trial <br> Bruxelles Palais Royal <i class="fas fa-arrow-right"></i> Brussel Atomium <br>27.6km</h5>
                 
@@ -269,7 +291,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day3">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/3/13478/0:0,2000:690-2000-0-70/83949" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 3 - Hilly <br> Binche <i class="fas fa-arrow-right"></i>  Épernay <br> 215 km</h5>
                  
@@ -280,7 +304,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day4">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/4/13487/0:0,2000:690-2000-0-70/b0221" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 4 - flat <br> Reims <i class="fas fa-arrow-right"></i> Nancy <br> 213.5km</h5>
                  
@@ -291,7 +317,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day5">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/5/13493/0:0,2000:690-2000-0-70/65b11" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 5 - Hilly <br> Saint-Dié-des-Vosges <i class="fas fa-arrow-right"></i> Colmar <br> 175.5 km</h5>
                  
@@ -302,7 +330,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day6">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/6/13491/0:0,2000:690-2000-0-70/1ff1b" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 6 - Mountains <br> 
                     Mulhouse <i class="fas fa-arrow-right"></i> La Planche des Belles Filles <br>160.5 km</h5>
@@ -314,7 +344,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day7">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/7/13479/0:0,2000:690-2000-0-70/217b9" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 7 - Flat <br> Belfort <i class="fas fa-arrow-right"></i> Chalon-sur-Saône <br> 230km</h5>
                  
@@ -325,7 +357,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day8">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/8/13480/0:0,2000:690-2000-0-70/693e9" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 8 - Hilly <br> Mâcon <i class="fas fa-arrow-right"></i> Saint-Étienne<br> 200km</h5>
                  
@@ -336,7 +370,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day9">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/9/13485/0:0,2000:690-2000-0-70/8706c" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 9 - Hilly <br> Saint-Étienne <i class="fas fa-arrow-right"></i> Brioude <br> 170.5km </h5>
                  
@@ -346,7 +382,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day10">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/10/13482/0:0,2000:690-2000-0-70/7cbe3" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 10 - Flat <br> Saint-Flour <i class="fas fa-arrow-right"></i> Albi <br> 217.5km </h5>
                  
@@ -357,7 +395,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day11">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://github.com/rogueathletic/tdf-promos-rbs-2019/blob/master/restDay1.png?raw=true" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title"> Rest Day # 1 <span id="zzzz">zzzz</span> <br> Albi <br> 0.00 km </h5>
                  
@@ -368,7 +408,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day12">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/12/13492/0:0,2000:690-2000-0-70/a889c" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 12 - Mountain <br> Toulouse <i class="fas fa-arrow-right"></i> Bagnères-de-Bigorre <br> 209.5 km</h5>
                  
@@ -379,7 +421,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day13">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/13/13476/0:0,2000:690-2000-0-70/960a4" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 13 - Individual Time Trial <br> Pau <i class="fas fa-arrow-right"></i> Pau <br> 27.2 km</h5>
                  
@@ -390,7 +434,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day14">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/14/13486/0:0,2000:690-2000-0-70/93673" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Day 14 - Mountains <br> Tarbes <i class="fas fa-arrow-right"></i> Tourmalet Barèges <br> 117.5 km </h5>
                  
@@ -401,7 +447,9 @@ color: silver;
 
               
               <div class="card" style="width: 18rem;" id="card-day15">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/15/13495/0:0,2000:690-2000-0-70/6cb35" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 15 - Mountains <br> Limoux <i class="fas fa-arrow-right"></i> Foix Prat d'Albis <br> 185 km</h5>
                  
@@ -411,7 +459,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day16">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://github.com/rogueathletic/tdf-promos-rbs-2019/blob/master/restDay2.png?raw=true" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Rest Day # 2 <span id="zzzz">zzzz</span> <br> Nîmes <br> 0.00 km</h5>
                  
@@ -421,7 +471,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day17">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/16/13489/0:0,2000:690-2000-0-70/065d5" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 16 - Flat <br> Nîmes <i class="fas fa-arrow-right"></i> Nîmes <br> 177 km </h5>
                  
@@ -431,7 +483,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day18">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/17/13496/0:0,2000:690-2000-0-70/d4fd2" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 17 - Hilly <br> Pont du Gard <i class="fas fa-arrow-right"></i> Gap <br> 200 km </h5>
                  
@@ -441,7 +495,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day19">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/18/13483/0:0,2000:690-2000-0-70/031be" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 18 - Mountains <br> Embrun <i class="fas fa-arrow-right"></i> Valloire <br> 208 km </h5>
                  
@@ -451,7 +507,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day20">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/19/13490/0:0,2000:690-2000-0-70/79a14" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 19 - Mountains <br> Saint-Jean-de-Maurienne <i class="fas fa-arrow-right"></i> Tignes <br> 126.5 km </h5>
                  
@@ -461,7 +519,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day21">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/20/13494/0:0,2000:690-2000-0-70/c5fba" alt="Card image cap">
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Stage 20 - Mountains <br> Albertville <i class="fas fa-arrow-right"></i> Val Thorens <br> 130 km </h5>
                  
@@ -471,7 +531,9 @@ color: silver;
               </div>
 
               <div class="card" style="width: 18rem;" id="card-day22">
+                <div id="image-hold">
                 <img class="card-img-top" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/21/13477/0:0,2000:690-2000-0-70/7550e" alt="Card image cap">
+                </d>
                 <div class="card-body">
                   <h5 class="card-title">Stage 21 - Final Stage <br> Rambouillet<i class="fas fa-arrow-right"></i>Paris Champs-Élysées <br> 128km </h5>
                  
@@ -512,7 +574,7 @@ color: silver;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
-
+<!-- <script defer src="./app.js"></script> -->
     
 </body>
 </html>
